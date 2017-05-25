@@ -3,15 +3,15 @@ import styled from 'styled-components'
 
 const Avatar = (props) => {
   return (
-    <AvatarWrap>
-      <Image src="http://placekitten.com/300/300" />
+    <AvatarWrap size={ props.size }>
+      <Image src="http://placekitten.com/g/200/200" />
     </AvatarWrap>
   )
 }
 
 const AvatarWrap = styled.div`
-  width: ${props => props.size};
-  height: ${props => props.size};
+  width: ${props => props.size}px;
+  height: ${props => props.size}px;
   border-radius: 50%;
   overflow: hidden;
 `

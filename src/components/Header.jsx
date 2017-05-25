@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import FontAwesome from 'react-fontawesome'
 
 import ActionList from './ActionList'
+import Avatar from './Avatar'
 
 const Header = (props) => {
   const { title } = props
@@ -12,7 +13,7 @@ const Header = (props) => {
     <Wrap>
       <div>
         <Title>
-          {title}
+          { title }
         </Title>
       </div>
       <Actions>
@@ -23,6 +24,7 @@ const Header = (props) => {
           </AddButton>
         </AddButtonWrap>
         <ActionList actions={ actions } align="row" />
+        <Avatar size="36" />
       </Actions>
     </Wrap>
   )

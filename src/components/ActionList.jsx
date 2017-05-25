@@ -5,10 +5,10 @@ import styled from 'styled-components'
 
 export class ActionList extends Component {
   renderActions() {
-    const { actions, color } = this.props
-
+    const { actions, color, itemSize } = this.props
+    debugger;
     return actions.map((name, idx) => {
-      return <ActionItem name={ name } key={ idx } href="#" color={ color } />
+      return <ActionItem name={ name } key={ idx } href="#" color={ color } size={ itemSize } />
     })
   }
   render() {
