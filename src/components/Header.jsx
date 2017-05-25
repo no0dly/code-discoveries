@@ -6,26 +6,33 @@ import ActionList from './ActionList'
 const Header = (props) => {
   const { title } = props
   return (
-    <div>
-      This is header
-      <Title>
-        <TitleText>
+    <Wrap>
+      <div>
+        <Title>
           {title}
-        </TitleText>
-      </Title>
+        </Title>
+      </div>
       <Actions>
-        <ActionList />
+
       </Actions>
-    </div>
+    </Wrap>
   )
 }
 
-const Title = styled.div`
-  margin-bottom: 20px;
+const Wrap = styled.div`
+  padding: 17px 17px 17px 30px;
+  box-shadow: 0 -8px 17px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `
 
-const TitleText = styled.h2`
-  font-size: 16px;
+const Title = styled.h2`
+  font-family: OpenSans;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.29;
+  color: #29404b;
 `
 
 const Actions = styled.div`

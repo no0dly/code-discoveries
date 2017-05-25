@@ -1,21 +1,36 @@
 import React from 'react'
-import { Link } from 'react-router'
+import styled from 'styled-components'
 
 import Sidebar from './Sidebar'
+import Header from './Header'
 
 const App = (props) => {
   return (
-    <div>
-      <ul>
-        <li><Link to="/">home</Link></li>
-        <li><Link to="/feed">feed</Link></li>
-        <li><Link to="/new">new</Link></li>
-        <li><Link to="/settings">settings</Link></li>
-      </ul>
-      <Sidebar />
-      {props.children}
-    </div>
+    <Wrap>
+      <SidebarWrap>
+        <Sidebar />
+      </SidebarWrap>
+      <Content >
+        <Header title="Account" />
+        {props.children}
+      </Content>
+    </Wrap>
   )
 }
+
+const Wrap = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+const SidebarWrap = styled.div`
+  width: 70px;
+  height: 100vh;
+  background: #0099ff;
+`
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 70px);
+`
 
 export default App
