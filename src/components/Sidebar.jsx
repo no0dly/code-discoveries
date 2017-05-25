@@ -18,10 +18,10 @@ const Sidebar = (props) => {
             <Image src={ Logo } alt="logo" />
           </Link>
         </LogoWrap>
-        <ActionList actions={ topActionList } />
+        <ActionList actions={ topActionList } color="#fff" />
       </div>
       <div>
-        <ActionList actions={ botActionList } />
+        <ActionList actions={ botActionList } color="#fff" />
       </div>
     </Wrap>
   )

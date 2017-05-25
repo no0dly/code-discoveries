@@ -3,11 +3,11 @@ import styled from 'styled-components'
 import FontAwesome from 'react-fontawesome'
 
 const ActionItem = (props) => {
-  const { href, name } = props
+  const { href, name, color } = props
 
   return (
     <li>
-      <Link href={ href }>
+      <Link href={ href } color={ color }>
         <FontAwesome name={ name } />
       </Link>
     </li>
@@ -26,7 +26,7 @@ const Link = styled.a`
     background: rgba(255,255,255, 0.2);
   }
   span {
-    color: #fff;
+    color: ${(props) => props.color};
   }
 `
 
