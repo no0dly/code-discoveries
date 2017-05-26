@@ -55,6 +55,7 @@ const Actions = styled.div`
   font-size: 16px;
   display: flex;
   flex-direction: row;
+  align-items: center;
 `
 const AddButtonWrap = styled.div`
 

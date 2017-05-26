@@ -7,7 +7,7 @@ import ActionList from './ActionList'
 import Logo from '../../logo.png'
 
 const Sidebar = (props) => {
-  const topActionList = [ 'code', 'bookmark', 'clock-o', 'star-o' ]
+  const topActionList = ['code', 'bookmark', 'clock-o', 'star-o']
   const botActionList = ['cog', 'sign-out']
 
   return (
