@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import ActionList from './ActionList'
 
-import Logo from '../logo.png'
+import Logo from '../../logo.png'
 
 const Sidebar = (props) => {
   const topActionList = [ 'code', 'bookmark', 'clock-o', 'star-o' ]

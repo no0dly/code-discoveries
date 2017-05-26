@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Sidebar from './Sidebar'
-import Header from './Header'
+import Sidebar from './sidebar/Sidebar'
+import Header from './header/Header'
 
 const App = (props) => {
   return (
@@ -11,7 +11,6 @@ const App = (props) => {
         <Sidebar />
       </SidebarWrap>
       <Content >
-        <Header title="Account" />
         {props.children}
       </Content>
     </Wrap>

@@ -5,16 +5,15 @@ import styled from 'styled-components'
 
 export class ActionList extends Component {
   renderActions() {
-    const { actions, color, itemSize } = this.props
-    debugger;
+    const { actions } = this.props
+
     return actions.map((name, idx) => {
-      return <ActionItem name={ name } key={ idx } href="#" color={ color } size={ itemSize } />
+      return <ActionItem name={ name } key={ idx } href="#" />
     })
   }
   render() {
-    const { align } = this.props
     return (
-      <List align={ align }>
+      <List>
         { this.renderActions() }
       </List>
     )
@@ -23,7 +22,7 @@ export class ActionList extends Component {
 
 const List = styled.ul`
   display: flex;
-  flex-direction: ${props => props.align ? 'row' : 'column'};
+  flex-direction: column;
 `
 
 export default ActionList

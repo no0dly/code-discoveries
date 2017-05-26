@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../Header'
+import Header from '../header/Header'
 
 const Feedpage = (props) => {
   return (
     <div>
-      <Header title="Feed"/>
+      <Header title="Feed" />
       This is feedpage
     </div>
   )

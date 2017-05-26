@@ -22,16 +22,20 @@ const Link = styled.a`
 
 const IconWrap = styled.div`
   display: flex;
-  width: ${(props) => props.size}px;
-  height: ${(props) => props.size}px;
+  width: 70px;
+  height: 70px;
   justify-content: center;
   align-items: center;
   transition: 0.3s;
   &:hover {
     background: rgba(255,255,255, 0.2);
+    span {
+      transition: 0.3s;
+      color: #fff;
+    }
   }
   span {
-    color: ${(props) => props.color};
+    color: rgba(233, 240, 250, 0.25);
   }
 `
 

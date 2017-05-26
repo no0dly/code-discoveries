@@ -8,9 +8,11 @@ import router from './router'
 import 'reset-css'
 import 'font-awesome/css/font-awesome.css'
 
+import * as store from './store/configureStore'
+
 ReactDOM.render(
-  <Provider>
-    {router}
+  <Provider store={ store.configure() }>
+    { router }
   </Provider>,
   document.getElementById('root')
 )
