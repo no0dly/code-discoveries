@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Sidebar from './sidebar/Sidebar'
-import Header from './header/Header'
 
 const App = (props) => {
   return (

@@ -5,15 +5,16 @@ import Avatar from '../Avatar'
 import HomepageSocial from './HomepageSocial'
 import HomepageStatistic from './HomepageStatistic'
 
-export class HeaderContent extends Component {
+export class HomepagePersonal extends Component {
   render() {
+    const { name, skills, tags } = this.props.data
+
     return (
       <Wrap>
         <Avatar size="160" border="true" />
-
         <Title>
           <TitleText>
-            Ivan Egorov
+            { name }
           </TitleText>
         </Title>
 
@@ -25,8 +26,7 @@ export class HeaderContent extends Component {
 
         <Description>
           <DescriptionText>
-            Ruby, Ruby on Rails, Elixir,
-            Functional Programming, DevOps
+            { skills.join(', ') }
           </DescriptionText>
         </Description>
 
@@ -38,7 +38,7 @@ export class HeaderContent extends Component {
 
         <Description>
           <DescriptionText>
-            #ruby #rails #ror #webdev #rack #web #backend
+            { tags.join(' ') }
           </DescriptionText>
         </Description>
 
@@ -118,4 +118,4 @@ const StatisticWrap = styled.div`
   width: 33.3%;
 `
 
-export default HeaderContent
+export default HomepagePersonal

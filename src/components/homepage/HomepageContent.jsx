@@ -4,14 +4,19 @@ import styled from 'styled-components'
 import HomepagePersonal from './HomepagePersonal'
 import HomepageFeed from './HomepageFeed'
 
-export class HeaderContent extends Component {
+export class HomepageContent extends Component {
   render() {
+    const data = {
+      name: 'Ivan Egorov',
+      skills: ['Ruby', 'Ruby on Rails', 'Elixir', 'Functional Programming', 'DevOps'],
+      tags: ['#ruby', '#rails', '#ror', '#webdev', '#rack', '#web', '#backend']
+    }
     return (
       <Wrap>
         <Banner />
         <Container>
           <PersonalWrap>
-            <HomepagePersonal />
+            <HomepagePersonal data={ data } />
           </PersonalWrap>
           <FeedWrap>
             <HomepageFeed />
@@ -42,7 +47,7 @@ const PersonalWrap = styled.div`
   width: 40%;
   display: flex;
   justify-content: flex-end;
-  margin-top: -90px;
+  margin-top: -120px;
   padding: 0 10px;
 `
 const FeedWrap = styled.div`
@@ -50,4 +55,4 @@ const FeedWrap = styled.div`
   padding: 0 10px;
 `
 
-export default HeaderContent
+export default HomepageContent
