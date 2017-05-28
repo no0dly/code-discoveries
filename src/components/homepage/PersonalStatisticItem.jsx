@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Homepage = (props) => {
+const PersonalStatisticItem = (props) => {
   return (
     <Wrap>
       <Count>
@@ -42,4 +42,4 @@ const TitleText = styled.p`
   color: #29404b;
 `
 
-export default Homepage
+export default PersonalStatisticItem

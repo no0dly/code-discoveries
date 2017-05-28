@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Avatar from '../Avatar'
 import HomepageSocial from './HomepageSocial'
-import HomepageStatistic from './HomepageStatistic'
+import PersonalStatisticList from './PersonalStatisticList'
 
 export class HomepagePersonal extends Component {
   render() {
@@ -46,15 +46,7 @@ export class HomepagePersonal extends Component {
           <HomepageSocial />
         </HomepageSocialWrap>
         <StatisticContainer>
-          <StatisticWrap>
-            <HomepageStatistic count="214" title="COOL CARDS" />
-          </StatisticWrap>
-          <StatisticWrap>
-            <HomepageStatistic count="14" title="FOLLOWERS" />
-          </StatisticWrap>
-          <StatisticWrap>
-            <HomepageStatistic count="14" title="FOLLOWING" />
-          </StatisticWrap>
+          <PersonalStatisticList />
         </StatisticContainer>
       </Wrap>
     )
@@ -111,11 +103,7 @@ const HomepageSocialWrap = styled.div`
   }
 `
 const StatisticContainer = styled.div`
-  display: flex;
-`
-
-const StatisticWrap = styled.div`
-  width: 33.3%;
+  margin-bottom: 10px;
 `
 
 export default HomepagePersonal
