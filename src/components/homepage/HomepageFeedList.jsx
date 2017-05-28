@@ -49,6 +49,50 @@ export class HomepageFeedList extends Component {
             count: 20
           }
         ]
+      },
+      {
+        title: 'second title',
+        hashes: [ '#ror', '#js', '#html' ],
+        social: [
+          {
+            title: 'heart-o',
+            count: 20
+          },
+          {
+            title: 'comment-o',
+            count: 20
+          },
+          {
+            title: 'bookmark-o',
+            count: 20
+          },
+          {
+            title: 'share-alt',
+            count: 20
+          }
+        ]
+      },
+      {
+        title: 'second title',
+        hashes: [ '#ror', '#js', '#html' ],
+        social: [
+          {
+            title: 'heart-o',
+            count: 20
+          },
+          {
+            title: 'comment-o',
+            count: 20
+          },
+          {
+            title: 'bookmark-o',
+            count: 20
+          },
+          {
+            title: 'share-alt',
+            count: 20
+          }
+        ]
       }
     ]
 

@@ -7,8 +7,34 @@ import ActionList from './ActionList'
 import Logo from '../../logo.png'
 
 const Sidebar = (props) => {
-  const topActionList = ['code', 'bookmark', 'clock-o', 'star-o']
-  const botActionList = ['cog', 'sign-out']
+  const topActionList = [
+    {
+      icon: 'code',
+      href: '/feed'
+    },
+    {
+      icon: 'bookmark',
+      href: '/settings'
+    },
+    {
+      icon: 'clock-o',
+      href: '/new'
+    },
+    {
+      icon: 'star-o',
+      href: '/new'
+    }
+  ]
+  const botActionList = [
+    {
+      icon: 'cog',
+      href: '/settings'
+    },
+    {
+      icon: 'sign-out',
+      href: '/log-out'
+    }
+  ]
 
   return (
     <Wrap>

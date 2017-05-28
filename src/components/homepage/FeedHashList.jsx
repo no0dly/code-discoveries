@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import FeedHashItem from './FeedIconItem'
+import FeedHashItem from './FeedHashItem'
 
 const FeedHashList = (props) => {
   const { hashes } = props

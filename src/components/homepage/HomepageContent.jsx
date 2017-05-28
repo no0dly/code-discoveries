@@ -30,6 +30,9 @@ export class HomepageContent extends Component {
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
+  min-width: 780px;
+  height: calc( 100vh - 70px );
+  overflow-y: scroll;
 `
 
 const Banner = styled.div`

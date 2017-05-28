@@ -14,6 +14,11 @@ const Item = styled.li`
   font-size: 12px;
   color: #29404b;
   padding-top: 4px;
+  margin-left: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 `
 
 export default FeedHashItem

@@ -1,23 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
 import FontAwesome from 'react-fontawesome'
+import { Link } from 'react-router'
 
 const ActionItem = (props) => {
   const { href, name, color, size } = props
   return (
-    <li>
-      <Link href={ href }>
+    <Item>
+      <Link to={ href } activeClassName="active">
         <IconWrap color={ color } size={ size } >
           <FontAwesome name={ name } />
         </IconWrap>
       </Link>
-    </li>
+    </Item>
   )
 }
 
-const Link = styled.a`
-  display: block;
-  text-decoration: none;
+const Item = styled.li`
+  a {
+    display: block;
+    text-decoration: none;
+    &.active span {
+      color: #fff;
+    }
+  }
+
 `
 
 const IconWrap = styled.div`

@@ -7,8 +7,8 @@ export class ActionList extends Component {
   renderActions() {
     const { actions } = this.props
 
-    return actions.map((name, idx) => {
-      return <ActionItem name={ name } key={ idx } href="#" />
+    return actions.map((link, idx) => {
+      return <ActionItem name={ link.icon } key={ idx } href={ link.href } />
     })
   }
   render() {
