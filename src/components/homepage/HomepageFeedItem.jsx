@@ -23,6 +23,13 @@ export class HomepageFeedItem extends Component {
             <FeedHashList hashes={ hashes } />
           </Hash>
         </Container>
+        <Container>
+          <Description>
+            <DescriptionText>
+              some text
+            </DescriptionText>
+          </Description>
+        </Container>
         <ReadMore>
           <ReadMoreLink href="#">
             Read more
@@ -59,6 +66,14 @@ const Actions = styled.div`
 `
 
 const Hash = styled.div`
+  width: 50%;
+`
+
+const Description = styled.div`
+  width: 50%;
+`
+
+const DescriptionText = styled.div`
   width: 50%;
 `
 
